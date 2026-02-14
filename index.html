@@ -6,10 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VERTZURE</title>
     <link rel="stylesheet" href="Files/style.css">
+    <link rel="stylesheet" href="Files/responsive.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <main>
+        <!-- 
+        <div class="intro">
+            <div class="intro-container">
+                <h1>
+                    <span class="v">v</span>
+                    <span class="e">e</span>
+                    <span class="r">r</span>
+                    <span class="t">t</span>
+                    <span class="z">z</span>
+                    <span class="u">u</span>
+                    <span class="rr">r</span>
+                    <span class="ee">e</span>
+                </h1>
+            </div>
+        </div> -->
+
         <div class="page-1">
             <nav class="navbar">
                 <div class="logo">
@@ -24,8 +42,8 @@
                             <a href="#" style="display: flex; gap: 8px;">Tips <i class="chevron"></i></a>
                         </li>
                         <div class="tips-hover">
-                            <li><a href="#">questions</a></li>
-                            <li><a href="#">commom problems</a></li>
+                            <li><a href="Files/questions.html">questions</a></li>
+                            <li><a href="Files/problems.html">commom problems</a></li>
                         </div>
                         <li>
                             <a href="Files/branches.html">Locations <span class="plus"> +</span></a>
@@ -34,6 +52,11 @@
                 </div>
 
                 <div class="nav-actions">
+                    <div class="hamburger" id="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="icon-circle">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -50,6 +73,7 @@
                         </svg>
                     </div>
                 </div>
+
             </nav>
 
             <video id="main" autoplay loop muted>
@@ -121,7 +145,6 @@
                 <div class="round">🌿</div>
             </div>
         </div>
-        </div>
         <!-- page 2 ended -->
 
         <div class="page-3">
@@ -135,27 +158,27 @@
         <!-- page 3 ended -->
 
         <div class="page-4">
-            <div class="service-01">
+            <div class="service-01" data-aos="zoom-out-up">
                 <h2>aeration</h2>
                 <div class="text">
                     <p>mechanical venitation</p>
                     <p>liquid earation</p>
                 </div>
             </div>
-            <div class="service-01">
+            <div class="service-01" data-aos="zoom-out-up">
                 <h2>controls</h2>
                 <div class="text">
                     <p>veeds</p>
                     <p>insects</p>
                 </div>
             </div>
-            <div class="service-01">
+            <div class="service-01" data-aos="zoom-out-up">
                 <h2>laws fertilization</h2>
                 <div class="text">
                     <p>fertilizer</p>
                 </div>
             </div>
-            <div class="service-01">
+            <div class="service-01" data-aos="zoom-out-up">
                 <h2>hydro seeding</h2>
                 <div class="text">
                     <p>medow mouth</p>
@@ -163,7 +186,7 @@
                     <p>fertilizer</p>
                 </div>
             </div>
-            <div class="service-01">
+            <div class="service-01" data-aos="zoom-out-up">
                 <h2>treatments</h2>
                 <div class="text">
                     <p>lime</p>
@@ -178,12 +201,6 @@
 
         <div class="page-5">
             <section class="lawn-hero">
-                <span class="flower f1"><img src="Files/content/f1.png" alt=""></span>
-                <span class="flower f2"><img src="Files/content/f2.png" alt=""></span>
-                <span class="flower f3"><img src="Files/content/f3.png" alt=""></span>
-                <span class="flower f4"><img src="Files/content/f4.png" alt=""></span>
-                <span class="flower f5"><img src="Files/content/f3.png" alt=""></span>
-
 
                 <div class="hero-container">
                     <div class="hero-left">
@@ -192,8 +209,17 @@
                             <span class="italic-serif">to eliminate</span> <br>
                             <span class="italic-serif">your</span> <br>
                             unwanted
+                            <span class="flower f1" data-aos="zoom-in" data-aos-duration="1000"><img src="Files/content/f1.png" alt=""></span>
+                            <span class="flower f2"data-aos="zoom-in" data-aos-duration="1200"><img src="Files/content/f2.png" alt=""></span>
+                            <span class="flower f3"data-aos="zoom-in" data-aos-duration="1100"><img src="Files/content/f3.png" alt=""></span>
+                            <span class="flower f4"data-aos="zoom-in" data-aos-duration="1300"><img src="Files/content/f4.png" alt=""></span>
+                            <span class="flower f5"data-aos="zoom-in" data-aos-duration="500"><img src="Files/content/f3.png" alt=""></span>
+
+
                         </h1>
                     </div>
+
+
 
                     <div class="hero-right">
                         <p class="hero-desc">
@@ -202,7 +228,7 @@
                             lush, green, and healthy lawns through our specialized services
                             and pursuit of excellence.
                         </p>
-                        <a href="#" class="btn-discover">Discover Vertdure</a>
+                        <a href="#"class="btn-discover">Discover Vertdure</a>
                     </div>
                 </div>
             </section>
@@ -386,6 +412,10 @@
     </main>
 
     <script src="Files/script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

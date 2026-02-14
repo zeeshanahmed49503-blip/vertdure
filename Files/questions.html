@@ -3,34 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verdure-Services</title>
+    <title>Question's Vertzure</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <style>
-        .page-1{
+        .faq-section {
+    max-width: 1380px;
+    margin: 30px auto;
+}
+
+.container {
+    display: flex;
+    gap: 60px; 
+    align-items: flex-start;
+}
+
+.faq-menu {
+    flex: 1; 
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden; /* Keeps child items inside rounded corners */
+    min-width: 300px;
+}
+
+.faq-item {
+    padding: 35px 30px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    transition: all 0.2s ease;
+    background-color: white;
+}
+
+.faq-item.active{
+    color: white;
+    background-color: black;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-content {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-text p {
+    font-size: 22px; 
+    line-height: 1.5;
+    color: #222;
+    font-weight: 400;
+}
+
+.content-images {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.image-card.small {
+    width: 40%;
+    height: 180px;
+    margin-bottom: 0;
+}
+
+.image-card.large {
+    width: 60%;
+    height: 300px; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .faq-menu, .faq-content {
+        width: 100%;
+    }
+
+    .content-images {
+        margin-top: 20px;
+    }
+}
+
+.faq-text p{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.faq-text #p2{
+    font-size: 18px;
+    line-height: 1.4;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.82);
+}
+ .page-1 #main{
             width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .page-1 #main{
-            width: 100%;
-            height: 120vh;
+            height: 110vh;
             object-fit: cover;
-            filter: brightness(0.8);
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            filter: brightness(.7);
         }
-        .page-4{
-            margin-bottom: 50px;
-        }
-        body{
-             background-color: rgb(36, 36, 36);
-        }
+        .page-1{background-color: transparent;}
+
+
     </style>
 </head>
 <body>
-
-      <div class="page-1">
+    <div class="page-1">
             <nav class="navbar">
-                 <div class="logo">
+                <div class="logo">
                     <a href="../index.html">VERTZURE<span>®</span></a>
                 </div>
 
@@ -41,7 +135,7 @@
                         <li id="tips">
                             <a href="#" style="display: flex; gap: 8px;">Tips <i class="chevron"></i></a>
                         </li>
-                          <div class="tips-hover">
+                        <div class="tips-hover">
                             <li><a href="questions.html">questions</a></li>
                             <li><a href="problems.html">commom problems</a></li>
                         </div>
@@ -75,15 +169,15 @@
                 </div>
             </nav>
 
-            <img id="main" src="content/service-main.webp" alt="">
+            <img src="content/dog.webp" id="main" alt="">
 
             <div class="page-1-footer">
                 <div class="page-1-footer-left">
-                    <h1 class="sh1">services</h1>
-                    <h1 class="fh1">complete for</h1>
-                    <h1 class="sh1">a perfect lawn.</h1>
+                    <h1 class="sh1">Questions</h1>
+                    <h1 class="fh1" style="text-transform: lowercase; padding: 10px 0px;">Professional for a</h1>
+                    <h1 class="sh1">Healthy lawn</h1>
 
-                    <button>view services</button>
+                    <button>view more</button>
                 </div>
                 <div class="page-1-footer-left">
                     <div class="insect-card">
@@ -103,51 +197,44 @@
             </div>
         </div>
 
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-menu">
+                <div class="faq-item q1">What is the ideal height for mowing the lawn?</div>
+                <div class="faq-item q2">Should we leave the grass clippings in place?</div>
+                <div class="faq-item q3">How much water is needed for a lawn to grow properly?</div>
+                <div class="faq-item q4">Is fertilizing really necessary?</div>
+                <div class="faq-item q5">Should we fertilize our lawn every year?</div>
+                <div class="faq-item q6">Is the lawn treatment safe for my children and pets?</div>
+                <div class="faq-item q7">What is the best time of day to water the lawn?</div>
+                <div class="faq-item q8">Can I mow my lawn right after a treatment?</div>
+            </div>
 
-          <div class="page-4">
-            <div class="service-01">
-                <h2>aeration</h2>
-                <div class="text">
-                    <p>mechanical venitation</p>
-                    <p>liquid earation</p>
+            <div class="faq-content">
+                <div class="content-text">
+                    <p id="faq-p">Balanced fertilization with a lawn treatment will result in a dense, vigorous, and healthy lawn. This will help the lawn better resist harmful organisms (diseases, insects, and weeds).</p>
                 </div>
-            </div>
-            <div class="service-01">
-                <h2>controls</h2>
-                <div class="text">
-                    <p>veeds</p>
-                    <p>insects</p>
+                
+                <div class="content-images">
+                    <div class="image-card small">
+                        <img src="content/q1.png" alt="Family gardening">
+                    </div>
+                    <div class="image-card large">
+                        <img src="content/q2.png" alt="Spreading fertilizer">
+                    </div>
                 </div>
-            </div>
-            <div class="service-01">
-                <h2>laws fertilization</h2>
-                <div class="text">
-                    <p>fertilizer</p>
-                </div>
-            </div>
-            <div class="service-01">
-                <h2>hydro seeding</h2>
-                <div class="text">
-                    <p>medow mouth</p>
-                    <p>careal bug</p>
-                    <p>fertilizer</p>
-                </div>
-            </div>
-            <div class="service-01">
-                <h2>treatments</h2>
-                <div class="text">
-                    <p>lime</p>
-                    <p>white worm</p>
-                    <p>medow mouth</p>
-                    <p>careal bug</p>
-                    <p>shaft injection</p>
+
+                <div class="faq-text">
+                    <p>explaination</p>
+                    <p id="p2">Like any plant, grass needs nutrients, which it obtains from the soil and through fertilizers applied as part of a maintenance program. An unfertilized lawn becomes more vulnerable to insects, diseases, and weeds. By applying fertilizers in small doses, spread throughout the season, you allow your lawn to receive the necessary nutrients at the right time, without harming the environment.</p>
                 </div>
             </div>
         </div>
+    </section>
 
 
-
-      <footer class="site-footer">
+    
+  <footer class="site-footer">
             <div class="footer-container">
 
                 <div class="footer-col brand-col">
@@ -166,8 +253,8 @@
                             <ul>
                                 <li><a href="packages.html">Packages</a></li>
                                 <li><a href="services.html">Services</a></li>
-                                <li><a href="#">Advice</a></li>
-                                <li><a href="#">Branches</a></li>
+                                <li><a href="questions.html">Advice</a></li>
+                                <li><a href="branches.html">Branches</a></li>
                             </ul>
                         </nav>
 
@@ -210,7 +297,6 @@
             </div>
         </footer>
 
-        <script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
