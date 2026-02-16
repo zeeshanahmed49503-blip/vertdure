@@ -10,14 +10,14 @@
     z-index: 101;
     background-color: rgba(0, 0, 0, 0.341);
     backdrop-filter: blur(10px);
-    padding: 15px;
+    padding: 10px;
     border-radius: 50%;
     aspect-ratio: 1;
 }
 
 .hamburger span {
-    width: 25px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     background-color: white;
     border-radius: 2px;
     transition: 0.3s;
@@ -43,6 +43,7 @@
     .nav-container {
         display: flex; 
         position: fixed;
+        overflow: hidden;
         top: 0;
         right: 0;
         height: 100vh;
@@ -58,6 +59,7 @@
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         border: none;
         z-index: 100; 
+        border-radius: 0;
     }
 
     .nav-container.active {
@@ -131,10 +133,15 @@
         align-items: flex-start;
         justify-content: center;
     }
-
+    .our-advice-section {
+        padding: 50px 10px;
+    }
+    .our-advice-section .advice{
+        font-size: 20px;
+    }
     .hero-right {
         padding-left: 0;
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
     /* Blog cards at 900px */
@@ -192,11 +199,28 @@
 @media (max-width: 850px) {
     .page-1 video {
         height: 100vh;
-    }
 
+    }
+    .lawn-hero{
+        padding: 120px 10px;
+    }
+   
     .service-01 {
         flex-direction: column;
         align-items: flex-start;
+        padding: 10px;
+    }
+    .service-01 h2{
+        font-size: 10vw;
+    }
+    .page-4{
+        padding: 100px 7px;
+    }
+    .page-3{
+        padding: 30px 10px;
+    }
+    .page-3 p{
+        font-size: 20px;
     }
 
     .service-01 .text {
@@ -216,13 +240,24 @@
     }
 
     .fh1, .sh1 {
-        font-size: 8vw;
+        font-size: 10vw;
+    }
+    .icon-circle{
+         width: 30px;
+  height: 30px;
+    }
+    .icon-i{
+        width: 15px;
+        height: 15px;
     }
 
     .insect-card {
         max-width: 100%;
         width: auto;
     }
+    .package-card .package-overlay{
+    width: 80%;
+}
 }
 
 /* ============ LARGE DESKTOP (1200px and below) ============ */
@@ -237,8 +272,8 @@
         display: none;
     }
 
-    .hero-heading {
-        font-size: 8vw;
+     .lawn-hero h1{
+        font-size: 14vw;
     }
 
     .hero-right {
