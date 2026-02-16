@@ -258,6 +258,9 @@
     .package-card .package-overlay{
     width: 80%;
 }
+#main{
+    height: 50vh;
+}
 }
 
 /* ============ LARGE DESKTOP (1200px and below) ============ */

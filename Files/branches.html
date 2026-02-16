@@ -22,6 +22,10 @@
             width: 100%;
             height: 100vh;
            filter: brightness(.9);
+           background-color: black;
+        }
+        .page-1{
+            background-color: black;
         }
 
         .location-card {
@@ -136,12 +140,32 @@
             width: 6px;
         }
 
-        /* .location-list::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 4px;
-        } */
         .logo{
             color: #1c1c1c;
+        }
+        .page-1{
+                           background-color: rgb(36, 36, 36);
+
+        }
+        .page-1 #main{
+            width: 100%;
+            height: 110vh;
+            object-fit: cover;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            filter: brightness(.8);
+        }
+        @media(max-width:850px){
+            .page-1 #main{
+                height: 45vh;
+            }
+            .location-card{
+                position: relative;
+                top: -200px;
+                left: 50%;
+                transform: translate(-50%);
+                max-width: 350px;
+            }
         }
     </style>
 </head>
@@ -227,7 +251,7 @@
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                     </svg>
-                    Alma
+                    vertdure Alma
                 </li>
                 <li class="list-item">
                     <svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -243,7 +267,7 @@
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                     </svg>
-                    Beauce
+                   vertzure Beauce
                 </li>
                 <li class="list-item">
                     <svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -281,27 +305,27 @@
         </div>
     </div>
 
-       <footer class="site-footer">
+        <footer class="site-footer">
             <div class="footer-container">
 
                 <div class="footer-col brand-col">
-                    <div class="footer-logo">VERT<span class="drop">D</span>URE</div>
+                    <div class="footer-logo"><a href="../index.html">VERT<span class="drop">D</span>URE</a></div>
                     <h2 class="footer-headline">Thunderbolt<br>for my lawn</h2>
                     <div class="footer-image-box">
-                        <img src="Files/content/dog.webp" alt="Family enjoying lawn">
+                        <img src="content/dog.webp" alt="Family enjoying lawn">
                     </div>
                 </div>
 
-                <div class="footer-right">
+                
 
 
                     <div class="footer-col">
                         <nav class="footer-nav">
                             <ul>
-                                <li><a href="#">Packages</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Advice</a></li>
-                                <li><a href="#">Branches</a></li>
+                                <li><a href="packages.html">Packages</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="questions.html">Advice</a></li>
+                                <li><a href="branches.html">Branches</a></li>
                             </ul>
                         </nav>
 
@@ -327,16 +351,14 @@
 
                         <nav class="social-nav">
                             <ul>
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">LinkedIn</a></li>
-                                <li><a href="#">TikTok</a></li>
-                                <li><a href="#">YouTube</a></li>
+                                <li><a href="https://www.facebook.com/vertzure" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                                <li><a href="https://www.instagram.com/vertzure" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/company/vertzure" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                                <li><a href="https://www.tiktok.com/@vertzure" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                                <li><a href="https://www.youtube.com/@vertzure" target="_blank" rel="noopener noreferrer">YouTube</a></li>
                             </ul>
                         </nav>
                     </div>
-
-                </div>
             </div>
 
             <div class="footer-bottom">

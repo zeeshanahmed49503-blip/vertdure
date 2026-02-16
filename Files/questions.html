@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,213 +9,234 @@
     <link rel="stylesheet" href="responsive.css">
     <style>
         .faq-section {
-    max-width: 1380px;
-    margin: 30px auto;
-}
+            max-width: 1380px;
+            margin: 30px auto;
+        }
 
-.container {
-    display: flex;
-    gap: 60px; 
-    align-items: flex-start;
-}
+        .container {
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+        }
 
-.faq-menu {
-    flex: 1; 
-    border: 1px solid #eee;
-    border-radius: 12px;
-    overflow: hidden; /* Keeps child items inside rounded corners */
-    min-width: 300px;
-}
+        .faq-menu {
+            flex: 1;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            overflow: hidden;
+            /* Keeps child items inside rounded corners */
+            min-width: 300px;
+        }
 
-.faq-item {
-    padding: 35px 30px;
-    border-bottom: 1px solid #eee;
-    cursor: pointer;
-    font-size: 20px;
-    color: #333;
-    transition: all 0.2s ease;
-    background-color: white;
-}
+        .faq-item {
+            padding: 35px 30px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            font-size: 20px;
+            color: #333;
+            transition: all 0.2s ease;
+            background-color: white;
+        }
 
-.faq-item.active{
-    color: white;
-    background-color: black;
-}
+        .faq-item.active {
+            color: white;
+            background-color: black;
+        }
 
-.faq-item:last-child {
-    border-bottom: none;
-}
+        .faq-item:last-child {
+            border-bottom: none;
+        }
 
-.faq-content {
-    flex: 1.2;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
+        .faq-content {
+            flex: 1.2;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
 
-.content-text p {
-    font-size: 22px; 
-    line-height: 1.5;
-    color: #222;
-    font-weight: 400;
-}
+        .content-text p {
+            font-size: 22px;
+            margin: 0px 10px;
+            padding: 20px 0;
+            line-height: 1.5;
+            color: #222;
+            font-weight: 400;
+        }
 
-.content-images {
-    display: flex;
-    align-items: flex-end;
-    gap: 20px;
-}
+        .content-images {
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
+        }
 
-.image-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    display: block;
-}
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+        }
 
-.image-card.small {
-    width: 40%;
-    height: 180px;
-    margin-bottom: 0;
-}
+        .image-card.small {
+            width: 40%;
+            height: 180px;
+            margin-bottom: 0;
+        }
 
-.image-card.large {
-    width: 60%;
-    height: 300px; 
-}
+        .image-card.large {
+            width: 60%;
+            height: 300px;
+        }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
 
-    .faq-menu, .faq-content {
-        width: 100%;
-    }
+            .faq-menu,
+            .faq-content {
+                width: 100%;
+            }
 
-    .content-images {
-        margin-top: 20px;
-    }
-}
+            .content-images {
+                margin-top: 20px;
+            }
+        }
 
-.faq-text p{
-    font-size: 18px;
-    text-transform: uppercase;
-}
-.faq-text #p2{
-    font-size: 18px;
-    line-height: 1.4;
-    text-transform: lowercase;
-    color: rgba(0, 0, 0, 0.82);
-}
- .page-1 #main{
+        .faq-text p {
+            font-size: 18px;
+                        padding: 0px 10px;
+
+            text-transform: uppercase;
+        }
+
+        .faq-text #p2 {
+            font-size: 18px;
+            padding: 0px 10px;
+            line-height: 1.4;
+            text-transform: lowercase;
+            color: rgba(0, 0, 0, 0.82);
+        }
+
+        .page-1 #main {
             width: 100%;
             height: 110vh;
             object-fit: cover;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
-            filter: brightness(.7);
+            filter: brightness(.8);
         }
-        .page-1{background-color: transparent;}
 
+          .page-1{
+                           background-color: rgb(36, 36, 36);
 
+        }
+        @media(max-width:850px){
+            .page-1 #main{
+                height: 45vh;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="page-1">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="../index.html">VERTZURE<span>®</span></a>
-                </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">VERTZURE<span>®</span></a>
+            </div>
 
-                <div class="nav-container">
-                    <ul class="nav-links">
-                        <li><a href="packages.html">Packages</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li id="tips">
-                            <a href="#" style="display: flex; gap: 8px;">Tips <i class="chevron"></i></a>
-                        </li>
-                        <div class="tips-hover">
-                            <li><a href="questions.html">questions</a></li>
-                            <li><a href="problems.html">commom problems</a></li>
-                        </div>
-                        <li>
-                            <a href="branches.html">Locations <span class="plus"> +</span></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="nav-actions">
-                    <div class="hamburger" id="mobile-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li id="tips">
+                        <a href="#" style="display: flex; gap: 8px;">Tips <i class="chevron"></i></a>
+                    </li>
+                    <div class="tips-hover">
+                        <li><a href="questions.html">questions</a></li>
+                        <li><a href="problems.html">commom problems</a></li>
                     </div>
-                    <div class="icon-circle">
-                        <svg width="20" height="20" class="icon-i" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="9" cy="21" r="1"></circle>
-                            <circle cx="20" cy="21" r="1"></circle>
-                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                        </svg>
-                    </div>
-                    <div class="icon-circle">
-                        <svg width="20" height="20" class="icon-i" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
+                    <li>
+                        <a href="branches.html">Locations <span class="plus"> +</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <div class="hamburger" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-            </nav>
-
-            <img src="content/dog.webp" id="main" alt="">
-
-            <div class="page-1-footer">
-                <div class="page-1-footer-left">
-                    <h1 class="sh1">Questions</h1>
-                    <h1 class="fh1" style="text-transform: lowercase; padding: 10px 0px;">Professional for a</h1>
-                    <h1 class="sh1">Healthy lawn</h1>
-
-                    <button>view more</button>
+                <div class="icon-circle">
+                    <svg width="20" height="20" class="icon-i" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
                 </div>
-                <div class="page-1-footer-left">
-                    <div class="insect-card">
-                        <div class="card-text">
-                            Insect problems? <br>
-                            Say Bye Bye Bugs!
-                        </div>
+                <div class="icon-circle">
+                    <svg width="20" height="20" class="icon-i" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+            </div>
+        </nav>
 
-                        <div class="card-images">
+        <img src="content/dog.webp" id="main" alt="">
 
-                            <div class="feature-image">
-                                <img src="content/bee.webp" alt="Wasp">
-                            </div>
+        <div class="page-1-footer">
+            <div class="page-1-footer-left">
+                <h1 class="sh1">Questions</h1>
+                <h1 class="fh1" style="text-transform: lowercase; padding: 10px 0px;">Professional for a</h1>
+                <h1 class="sh1">Healthy lawn</h1>
+
+                <button>view more</button>
+            </div>
+            <div class="page-1-footer-left">
+                <div class="insect-card">
+                    <div class="card-text">
+                        Insect problems? <br>
+                        Say Bye Bye Bugs!
+                    </div>
+
+                    <div class="card-images">
+
+                        <div class="feature-image">
+                            <img src="content/bee.webp" alt="Wasp">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <section class="faq-section">
         <div class="container">
             <div class="faq-menu">
-                <div class="faq-item q1">What is the ideal height for mowing the lawn?</div>
-                <div class="faq-item q2">Should we leave the grass clippings in place?</div>
-                <div class="faq-item q3">How much water is needed for a lawn to grow properly?</div>
-                <div class="faq-item q4">Is fertilizing really necessary?</div>
-                <div class="faq-item q5">Should we fertilize our lawn every year?</div>
-                <div class="faq-item q6">Is the lawn treatment safe for my children and pets?</div>
-                <div class="faq-item q7">What is the best time of day to water the lawn?</div>
-                <div class="faq-item q8">Can I mow my lawn right after a treatment?</div>
+                <div class="faq-item" onclick="scrollToFaq()">What is the ideal height for mowing the lawn?</div>
+                <div class="faq-item" onclick="scrollToFaq()">Should we leave the grass clippings in place?</div>
+                <div class="faq-item" onclick="scrollToFaq()">How much water is needed for a lawn to grow properly?
+                </div>
+                <div class="faq-item" onclick="scrollToFaq()">Is fertilizing really necessary?</div>
+                <div class="faq-item" onclick="scrollToFaq()">Should we fertilize our lawn every year?</div>
+                <div class="faq-item" onclick="scrollToFaq()">Is the lawn treatment safe for my children and pets?</div>
+                <div class="faq-item" onclick="scrollToFaq()">What is the best time of day to water the lawn?</div>
+                <div class="faq-item" onclick="scrollToFaq()">Can I mow my lawn right after a treatment?</div>
             </div>
+
 
             <div class="faq-content">
                 <div class="content-text">
-                    <p id="faq-p">Balanced fertilization with a lawn treatment will result in a dense, vigorous, and healthy lawn. This will help the lawn better resist harmful organisms (diseases, insects, and weeds).</p>
+                    <p id="faq-p">Balanced fertilization with a lawn treatment will result in a dense, vigorous, and
+                        healthy lawn. This will help the lawn better resist harmful organisms (diseases, insects, and
+                        weeds).</p>
                 </div>
-                
+
                 <div class="content-images">
                     <div class="image-card small">
                         <img src="content/q1.png" alt="Family gardening">
@@ -226,77 +248,80 @@
 
                 <div class="faq-text">
                     <p>explaination</p>
-                    <p id="p2">Like any plant, grass needs nutrients, which it obtains from the soil and through fertilizers applied as part of a maintenance program. An unfertilized lawn becomes more vulnerable to insects, diseases, and weeds. By applying fertilizers in small doses, spread throughout the season, you allow your lawn to receive the necessary nutrients at the right time, without harming the environment.</p>
+                    <p id="p2">Like any plant, grass needs nutrients, which it obtains from the soil and through
+                        fertilizers applied as part of a maintenance program. An unfertilized lawn becomes more
+                        vulnerable to insects, diseases, and weeds. By applying fertilizers in small doses, spread
+                        throughout the season, you allow your lawn to receive the necessary nutrients at the right time,
+                        without harming the environment.</p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    
-  <footer class="site-footer">
-            <div class="footer-container">
 
-                <div class="footer-col brand-col">
-                    <div class="footer-logo">VERT<span class="drop">D</span>URE</div>
-                    <h2 class="footer-headline">Thunderbolt<br>for my lawn</h2>
-                    <div class="footer-image-box">
-                        <img src="content/dog.webp" alt="Family enjoying lawn">
-                    </div>
-                </div>
+    <footer class="site-footer">
+        <div class="footer-container">
 
-                <div class="footer-right">
-
-
-                    <div class="footer-col">
-                        <nav class="footer-nav">
-                            <ul>
-                                <li><a href="packages.html">Packages</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="questions.html">Advice</a></li>
-                                <li><a href="branches.html">Branches</a></li>
-                            </ul>
-                        </nav>
-
-                        <div class="vext-brand">
-                            <span class="vext-logo">vext</span>
-                            <span class="vext-tagline">Gestion<br>parasitaire</span>
-                        </div>
-
-                        <div class="lang-toggle">
-                            <button class="lang-btn active">French</button>
-                            <button class="lang-btn">English</button>
-                        </div>
-                    </div>
-
-                    <div class="footer-col">
-                        <nav class="footer-nav">
-                            <ul>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact us</a></li>
-                            </ul>
-                        </nav>
-
-                        <nav class="social-nav">
-                            <ul>
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">LinkedIn</a></li>
-                                <li><a href="#">TikTok</a></li>
-                                <li><a href="#">YouTube</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
+            <div class="footer-col brand-col">
+                <div class="footer-logo"><a href="../index.html">VERT<span class="drop">D</span>URE</a></div>
+                <h2 class="footer-headline">Thunderbolt<br>for my lawn</h2>
+                <div class="footer-image-box">
+                    <img src="content/dog.webp" alt="Family enjoying lawn">
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2026 Vertdure</p>
-            </div>
-        </footer>
+            
+
+
+                <div class="footer-col">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="questions.html">Advice</a></li>
+                            <li><a href="branches.html">Branches</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="vext-brand">
+                        <span class="vext-logo">vext</span>
+                        <span class="vext-tagline">Gestion<br>parasitaire</span>
+                    </div>
+
+                    <div class="lang-toggle">
+                        <button class="lang-btn active">French</button>
+                        <button class="lang-btn">English</button>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="social-nav">
+                        <ul>
+                            <li><a href="https://www.facebook.com/vertzure" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/vertzure" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/vertzure" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://www.tiktok.com/@vertzure" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                            <li><a href="https://www.youtube.com/@vertzure" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vertdure</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

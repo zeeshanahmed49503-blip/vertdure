@@ -12,7 +12,7 @@
 
 <body>
     <main>
-        <!-- 
+        
         <div class="intro">
             <div class="intro-container">
                 <h1>
@@ -26,7 +26,7 @@
                     <span class="ee">e</span>
                 </h1>
             </div>
-        </div> -->
+        </div>
 
         <div class="page-1">
             <nav class="navbar">
@@ -351,7 +351,7 @@
             <div class="footer-container">
 
                 <div class="footer-col brand-col">
-                    <div class="footer-logo">VERT<span class="drop">D</span>URE</div>
+                    <div class="footer-logo"><a href="index.html">VERT<span class="drop">D</span>URE</a></div>
                     <h2 class="footer-headline">Thunderbolt<br>for my lawn</h2>
                     <div class="footer-image-box">
                         <img src="Files/content/dog.webp" alt="Family enjoying lawn">
@@ -364,10 +364,10 @@
                     <div class="footer-col">
                         <nav class="footer-nav">
                             <ul>
-                                <li><a href="#">Packages</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Advice</a></li>
-                                <li><a href="#">Branches</a></li>
+                                <li><a href="Files/packages.html">Packages</a></li>
+                                <li><a href="Files/services.html">Services</a></li>
+                                <li><a href="Files/questions.html">Advice</a></li>
+                                <li><a href="Files/branches.html">Branches</a></li>
                             </ul>
                         </nav>
 
@@ -393,11 +393,11 @@
 
                         <nav class="social-nav">
                             <ul>
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">LinkedIn</a></li>
-                                <li><a href="#">TikTok</a></li>
-                                <li><a href="#">YouTube</a></li>
+                                <li><a href="https://www.facebook.com/vertzure" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                                <li><a href="https://www.instagram.com/vertzure" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/company/vertzure" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                                <li><a href="https://www.tiktok.com/@vertzure" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                                <li><a href="https://www.youtube.com/@vertzure" target="_blank" rel="noopener noreferrer">YouTube</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -413,6 +413,39 @@
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    
+
+let intro = document.querySelector(".intro")
+let span = document.querySelectorAll(".intro-container h1 span")
+
+if(intro){
+
+    document.body.classList.add('no-scroll');
+}
+
+setTimeout(() => {
+    intro.style.backgroundColor = "rgba(0, 0, 0, 0.7)"
+    intro.style.backdropFilter = "blur(50px)"
+    
+}, 3000)
+
+setTimeout(() => {
+    span.forEach((val) => {
+        val.style.padding = "10px"
+    })
+}, 4500)
+
+setTimeout(() => {
+    intro.style.top = "-100%"
+    document.body.classList.remove('no-scroll');
+}, 7000)
+
+setTimeout(() => {
+    intro.style.display = "none"
+}, 10000)
+
+
   </script>
 </body>
 

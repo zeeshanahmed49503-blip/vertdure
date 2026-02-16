@@ -16,6 +16,7 @@ body {
   font-family: 'normal', sans-serif;
   text-transform: capitalize;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* Make box-sizing predictable and ensure media scale */
@@ -129,6 +130,10 @@ img, picture, svg, video { max-width: 100%; height: auto; display: block; }
 .icon-i {
   width: 20px;
   height: 20px;
+}
+.page-1{
+   width: 100%;
+    height: 110vh;
 }
 
 .page-1 video{
@@ -667,6 +672,10 @@ z-index: -1;
   margin-bottom: 40px;
   font-family: 'bold';
 }
+.footer-logo a{
+  color: white;
+  text-decoration: none;
+}
 
 .footer-headline {
   font-family: 'Italic', serif; /* Or any elegant serif */
@@ -960,7 +969,7 @@ z-index: -1;
   border-radius: 50px;
 }
 .intro-container h1 .e{
-  animation: intro 4.5s;
+  animation: intro 4s;
   background-color: #433e38;
   padding: 10px;
   padding-bottom: 90px;
@@ -1030,3 +1039,5 @@ body.no-scroll {
   overflow: hidden;
   height: 100vh; 
 }
+
+

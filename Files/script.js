@@ -24,37 +24,6 @@ tip.addEventListener("mouseleave", () => {
     tip.classList.remove("active")
 });
 
-
-let intro = document.querySelector(".intro")
-let span = document.querySelectorAll(".intro-container h1 span")
-
-if(intro){
-
-    document.body.classList.add('no-scroll');
-}
-
-setTimeout(() => {
-    intro.style.backgroundColor = "rgba(0, 0, 0, 0.7)"
-    intro.style.backdropFilter = "blur(50px)"
-    
-}, 3000)
-
-setTimeout(() => {
-    span.forEach((val) => {
-        val.style.padding = "10px"
-    })
-}, 4500)
-
-setTimeout(() => {
-    intro.style.top = "-100%"
-    document.body.classList.remove('no-scroll');
-}, 7000)
-
-setTimeout(() => {
-    intro.style.display = "none"
-}, 10000)
-
-
 let question = document.querySelectorAll(".faq-item")
 let faqText = document.querySelector(".faq-content #faq-p")
 
@@ -107,4 +76,28 @@ menuBtn.addEventListener('click', () => {
      menuBtn.classList.toggle('active');
      nav.classList.toggle('active');
     document.body.classList.toggle('no-scroll');
+});
+
+function scrollToFaq() {
+   let p = document.getElementById("faq-p").scrollIntoView({
+        behavior: "smooth"
+        
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const listItems = document.querySelectorAll('.list-item');
+    const mapIframe = document.getElementById('map');
+
+    listItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const locationName = item.textContent.trim();
+            
+            const encodedLocation = encodeURIComponent(locationName);
+            
+            const newMapUrl = `https://www.google.com/maps?q=${encodedLocation}&output=embed`;
+
+            mapIframe.src = newMapUrl;
+        });
+    });
 });
