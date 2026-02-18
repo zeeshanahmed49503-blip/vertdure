@@ -24,6 +24,41 @@ tip.addEventListener("mouseleave", () => {
     tip.classList.remove("active")
 });
 
+
+    
+
+let intro = document.querySelector(".intro")
+let span = document.querySelectorAll(".intro-container h1 span")
+
+if(intro){
+
+    document.body.classList.add('no-scroll');
+}
+
+setTimeout(() => {
+    intro.style.backgroundColor = "rgba(0, 0, 0, 0.7)"
+    intro.style.backdropFilter = "blur(50px)"
+    
+}, 3000)
+
+setTimeout(() => {
+    span.forEach((val) => {
+        val.style.padding = "10px"
+    })
+}, 4500)
+
+setTimeout(() => {
+    intro.style.top = "-100%"
+    document.body.classList.remove('no-scroll');
+}, 7000)
+
+setTimeout(() => {
+    intro.style.display = "none"
+}, 10000)
+
+
+
+
 let question = document.querySelectorAll(".faq-item")
 let faqText = document.querySelector(".faq-content #faq-p")
 
